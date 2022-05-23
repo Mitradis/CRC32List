@@ -1,0 +1,7 @@
+C:\Build\CRC32List\CRC32List\bin\Release\CRC32List.exe.config
+C:\Build\CRC32List\CRC32List\bin\Release\CRC32List.exe
+C:\Build\CRC32List\CRC32List\bin\Release\CRC32List.pdb
+C:\Build\CRC32List\CRC32List\obj\Release\CRC32List.FormMain.resources
+C:\Build\CRC32List\CRC32List\obj\Release\CRC32List.csproj.GenerateResource.Cache
+C:\Build\CRC32List\CRC32List\obj\Release\CRC32List.exe
+C:\Build\CRC32List\CRC32List\obj\Release\CRC32List.pdb
