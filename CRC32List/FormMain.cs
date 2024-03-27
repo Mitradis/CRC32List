@@ -154,7 +154,7 @@ namespace CRC32List
             {
                 compareLists();
             }
-            (list ? filesName1 : filesName2).Text = (list ? listView1 : listView2).Items.Count > 0 ? "Файлы" + " (" + (list ? listView1 : listView2).Items.Count.ToString() + "):" : "Файлы";
+            (list ? filesName1 : filesName2).Text = (list ? listView1 : listView2).Items.Count > 0 ? "Файлы" + " (" + (list ? listView1 : listView2).Items.Count + "):" : "Файлы";
             if (list ? !backgroundWorker2.IsBusy : !backgroundWorker1.IsBusy)
             {
                 Text = md5 ? "MD5 List" : "CRC32 List";
@@ -184,6 +184,11 @@ namespace CRC32List
                             listView1.Items[i].BackColor = Color.MistyRose;
                             listView2.Items[j].BackColor = Color.MistyRose;
                         }
+                    }
+                    else if (String.Equals(listView1.Items[i].Text, listView2.Items[j].Text, StringComparison.OrdinalIgnoreCase) && listView1.Items[i].BackColor == SystemColors.Window && listView2.Items[j].BackColor == SystemColors.Window)
+                    {
+                        listView1.Items[i].BackColor = Color.LemonChiffon;
+                        listView2.Items[j].BackColor = Color.LemonChiffon;
                     }
                 }
             }
