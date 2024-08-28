@@ -177,7 +177,6 @@ namespace CRC32List
                         {
                             listView1.Items[i].BackColor = Color.PaleGreen;
                             listView2.Items[j].BackColor = Color.PaleGreen;
-                            break;
                         }
                         else
                         {
@@ -185,10 +184,16 @@ namespace CRC32List
                             listView2.Items[j].BackColor = Color.MistyRose;
                         }
                     }
-                    else if (String.Equals(listView1.Items[i].Text, listView2.Items[j].Text, StringComparison.OrdinalIgnoreCase) && listView1.Items[i].BackColor == SystemColors.Window && listView2.Items[j].BackColor == SystemColors.Window)
+                    else if (String.Equals(listView1.Items[i].Text, listView2.Items[j].Text, StringComparison.OrdinalIgnoreCase))
                     {
-                        listView1.Items[i].BackColor = Color.LemonChiffon;
-                        listView2.Items[j].BackColor = Color.LemonChiffon;
+                        if (listView1.Items[i].BackColor != Color.PaleGreen)
+                        {
+                            listView1.Items[i].BackColor = Color.LemonChiffon;
+                        }
+                        if (listView2.Items[j].BackColor != Color.PaleGreen)
+                        {
+                            listView2.Items[j].BackColor = Color.LemonChiffon;
+                        }
                     }
                 }
             }
